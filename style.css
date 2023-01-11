@@ -1,0 +1,30 @@
+.textFiltrado{
+  display: none !important;
+}
+
+.tecla{
+  width: 60px;
+  margin: 2px 0px 2px 0px;
+}
+
+.barra{
+  width: 640px;
+}
+
+#borrar{
+  width: 60px;
+}
+
+#intro{
+  width: 60px;
+}
+
+#teclaMayus{
+  width: 60px;
+}
+#teclaMayus{
+  text-transform: capitalize;
+}
+.upper {
+  text-transform: lowercase;
+}
