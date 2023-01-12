@@ -63,26 +63,36 @@ cadenaFiltrada.classList.remove(`textFiltrado`)
 })
 }
 
-botones.forEach(tecla =>{
+ botones.forEach(tecla =>{
   tecla.addEventListener(("click"),() =>{
-  escribirInput.value += tecla.value
+    if (tecla.classList.contains("upper")) {
+      escribirInput.value += tecla.value.toLowerCase()
+    } else {
+      escribirInput.value += tecla.value
+    }
+  
   })
 })
 
-const limpiarDisplay = () =>{
-  escribirInput.value = " "
-}
+
+
 
 
 const mayusMinus = () =>{
-  botones.forEach(tecla => {
-    tecla.classList.toggle("upper")
-  })  
+ botones.forEach(tecla => {
+  tecla.classList.toggle("upper")
+})
+}
+ 
+
+
+
+
+const limpiarDisplay = () =>{
+   escribirInput.value = ""
 }
 
-
-
-
+ 
 
 
 
